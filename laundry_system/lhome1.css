@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/premium-vector/laundry-room-interior-with-washing-machine-household-chemistry-cleaning-washing-powder-towels_529344-718.jpg') no-repeat center center/cover;
+    color: #444;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(173, 216, 230, 0.9); /* Brighter light blue */
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #1E3A5F;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px; /* Adjusted margin to move block further down */
+}
+.hero-content {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.6); /* Lighter transparency */
+    padding: 30px; /* Adjusted padding */
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+}
+.hero h1 {
+    font-size: 28px; /* Adjusted size */
+    margin-bottom: 8px;
+    color: #3a5975; /* Less dark */
+    font-weight: bold;
+}
+.hero p {
+    font-size: 16px; /* Adjusted size */
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #4a6b8a; /* Less dark */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+.btn-main {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    color: #1E3A5F;
+    padding: 14px 24px; /* Adjusted size */
+    font-size: 18px; /* Adjusted size */
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn-main:hover {
+    background: #5aa9e6; /* Darker hover shade */
+    color: #fff;
+    transform: scale(1.05);
+}
+.btn-main::after {
+    content: '\2192'; /* Right arrow */
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 15px; /* Adjusted padding */
+    background: rgba(173, 216, 230, 0.9); /* Brighter light blue */
+    flex-grow: 1;
+    margin-top: auto;
+}
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #1E3A5F;
+    font-weight: bold;
+}
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.feature-item {
+    background: #e0f7fa; /* Brighter pastel shade */
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    color: #1E3A5F;
+}
+.feature-item:hover {
+    transform: scale(1.05);
+    background: #b2ebf2;
+}
+.feature-item i {
+    font-size: 30px;
+    color: #1E3A5F;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background: rgba(135, 206, 235, 0.9); /* Brighter light blue */
+    color: #1E3A5F;
+    text-align: center;
+    padding: 5px 0; /* Reduced padding to make footer smaller */
+    font-size: 12px;
+    width: 100%;
+    position: relative;
+} 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 90%;
+    }
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
