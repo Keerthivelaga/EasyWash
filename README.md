@@ -40,10 +40,6 @@ The project aims to provide an efficient and user-friendly digital solution for 
 - Add/edit/delete washing machines and their status.
 - View all users, bookings, and manage maintenance schedules.
 
-#### 📄 Export and Reports:
-- Admins can export booking history in Excel/CSV format.
-- Sort and filter columns for efficient data management.
-
 ---
 
 ### 🧑‍💻 Technologies Used
