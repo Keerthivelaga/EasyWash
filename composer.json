@@ -1,0 +1,7 @@
+{
+    "name": "keerthi/easywash",
+    "description": "Easy Wash Laundry Management System",
+    "require": {
+        "php": ">=8.0"
+    }
+}
