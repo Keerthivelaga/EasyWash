@@ -1,11 +1,15 @@
 <?php
-$servername = getenv('MYSQLHOST') ?: 'localhost';
-$username = getenv('MYSQLUSER') ?: 'root';
-$password = getenv('MYSQLPASSWORD') ?: '';
-$dbname = getenv('MYSQLDATABASE') ?: 'laundry_db';
-$port = (int)(getenv('MYSQLPORT') ?: 3306);
+$servername = getenv('MYSQLHOST');
+$username   = getenv('MYSQLUSER');
+$password   = getenv('MYSQLPASSWORD');
+$dbname     = getenv('MYSQLDATABASE');
+$port       = getenv('MYSQLPORT');
 
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
+if (!$servername || !$username || !$password || !$dbname || !$port) {
+    die("Missing Railway environment variables");
+}
+
+$conn = new mysqli($servername, $username, $password, $dbname, (int)$port);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
